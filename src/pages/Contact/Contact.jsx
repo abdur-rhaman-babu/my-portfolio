@@ -17,8 +17,8 @@ const Contact = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 bg-white rounded-xl shadow-lg max-w-4xl mx-auto">
-      <div className="space-y-4 border-r-2 border-[#058789]">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-5 lg:p-8 bg-white rounded-xl shadow-lg max-w-4xl mx-auto">
+      <div className="space-y-4 md:border-r-2 border-[#058789]">
         <h2 className="text-3xl font-bold text-gray-900">Get in Touch</h2>
         
         <div className="text-lg text-gray-700 font-semibold">
@@ -36,7 +36,7 @@ const Contact = () => {
         </div>
       </div>
 
-      <form className="bg-white p-6 rounded-xl space-y-4">
+      <form className="bg-white  rounded-xl space-y-4">
         <input
           type="text"
           name="name"

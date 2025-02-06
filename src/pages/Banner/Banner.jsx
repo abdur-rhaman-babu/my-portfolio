@@ -55,7 +55,7 @@ const Banner = () => {
             </a>
           </i>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 mb-5">
           <button>
             {" "}
             <a
