@@ -6,7 +6,7 @@ const Banner = () => {
   return (
     <div className="md:flex items-center gap-5 justify-between flex flex-col-reverse md:flex-row">
       <div className="flex flex-col gap-2 max-w-2xl">
-        <h2 className="font-bold text-3xl">Hello It's Me</h2>
+        <h2 className="font-bold text-3xl">Hello 👋 It's Me</h2>
         <h1 className="font-bold text-4xl">Abdur Rhaman Babu</h1>
 
         <h2 className="font-bold text-3xl">
@@ -40,7 +40,7 @@ const Banner = () => {
             </a>
           </i>
           <i className="border-2 border-[#058789] p-1 rounded-lg text-blue-500">
-            <a href="https://www.linkedin.com/in/abdur-rhaman-babu-265148347/">
+            <a href="https://www.linkedin.com/in/abdur-rhaman-babu-239553228/">
               <FaLinkedin size={35} />
             </a>
           </i>
@@ -55,7 +55,7 @@ const Banner = () => {
             </a>
           </i>
         </div>
-        <div>
+        <div className="flex gap-2">
           <button>
             {" "}
             <a
@@ -64,6 +64,16 @@ const Banner = () => {
               className="text-white bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold"
             >
               Download CV
+            </a>
+          </button>
+          <button>
+            {" "}
+            <a
+              href="https://www.linkedin.com/in/abdur-rhaman-babu-239553228/"
+              download
+              className="bg-gradient-to-r px-4 py-2 rounded-md font-semibold border border-[#058789]"
+            >
+              Hire Me
             </a>
           </button>
         </div>
