@@ -1,19 +1,44 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  const scrollToSection = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = -100; 
+      const elementPosition =
+        element.getBoundingClientRect().top + window.scrollY;
+      const offsetPosition = elementPosition + offset;
+
+      setActiveSection(id);
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+
+ 
+      setTimeout(() => {
+        setActiveSection(id);
+      }, 600); 
+    }
+  };
+
+
   const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About", path: "/about" },
-    { name: "Skills", path: "/skills" },
-    { name: "Projects", path: "/projects" },
-    { name: "Contact", path: "/contact" },
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Skills", id: "skills" },
+    { name: "Projects", id: "projects" },
+    { name: "Contact", id: "contact" },
   ];
 
   return (
@@ -23,19 +48,16 @@ const Navbar = () => {
           AR <span className="text-gray-200">BABU</span>
         </Link>
 
+        {/* Desktop Navigation */}
         <ul className="hidden lg:flex space-x-6">
           {navLinks.map((link) => (
-            <li key={link.name}>
-              <NavLink
-                to={link.path}
-                className={({ isActive }) =>
-                  `relative text-white font-semibold hover:text-gray-200 transition ${
-                    isActive ? "border-b-2 border-white" : ""
-                  }`
-                }
-              >
-                {link.name}
-              </NavLink>
+            <li
+              onClick={() => scrollToSection(link.id)}
+              className={`relative text-white font-semibold cursor-pointer hover:text-gray-200 transition 
+             ${activeSection === link.id ? "border-b-2 border-white" : ""}`}
+              key={link.name}
+            >
+              {link.name}
             </li>
           ))}
         </ul>
@@ -53,22 +75,22 @@ const Navbar = () => {
         </button>
       </div>
 
+      {/* Mobile Navigation */}
       {isOpen && (
         <div className="lg:hidden bg-[#058789] p-4 absolute top-16 left-0 w-full shadow-md">
           <ul className="flex flex-col space-y-4">
             {navLinks.map((link) => (
-              <li key={link.name}>
-                <NavLink
-                  to={link.path}
-                  className={({ isActive }) =>
-                    `text-white text-lg font-semibold block px-4 py-2 rounded transition hover:bg-gray-700 ${
-                      isActive ? "bg-gray-800" : ""
-                    }`
-                  }
-                  onClick={() => setIsOpen(false)}
-                >
-                  {link.name}
-                </NavLink>
+              <li
+                onClick={() => {
+                  scrollToSection(link.id);
+                  setIsOpen(false);
+                }}
+                className={`relative text-white font-semibold cursor-pointer hover:text-gray-200 transition ${
+                  activeSection === link.id ? "border-b-2 border-white" : ""
+                }`}
+                key={link.name}
+              >
+                {link.name}
               </li>
             ))}
           </ul>

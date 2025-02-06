@@ -4,7 +4,7 @@ import { TypeAnimation } from "react-type-animation";
 import banner1 from "../../assets/image/banner1.png";
 const About = () => {
   return (
-    <div className="md:flex items-center gap-5 justify-between md:flex-row">
+    <div id="about" className="md:flex items-center gap-5 justify-between md:flex-row my-32">
       <div className="bg-gradient-to-r from-[#058789] to-[#05696B] rounded-t-full">
         <img src={banner1} alt="" />
       </div>

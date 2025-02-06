@@ -1,38 +1,23 @@
-import { useState } from "react";
-import { Mail, Phone, MapPin } from "lucide-react";
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    message: "",
-  });
-
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-  };
-
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-5 lg:p-8 bg-white rounded-xl shadow-lg max-w-4xl mx-auto">
+    <section
+      id="contact"
+      className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-5 lg:p-8 bg-white rounded-xl shadow-sm max-w-4xl mx-auto"
+    >
       <div className="space-y-4 md:border-r-2 border-[#058789]">
         <h2 className="text-3xl font-bold text-gray-900">Get in Touch</h2>
-        
+
         <div className="text-lg text-gray-700 font-semibold">
-        <span className="text-xl font-bold">Email</span>
+          <span className="text-xl font-bold">Email</span>
           <p>abdurrhamanbabu72@gmail.com</p>
         </div>
         <div className="text-lg text-gray-700 font-semibold">
-            
-            <span className="text-xl font-bold">Phone Number</span>
-            <p>01905-753265</p>
-            </div>
+          <span className="text-xl font-bold">Phone Number</span>
+          <p>01905-753265</p>
+        </div>
         <div className="text-lg text-gray-700 font-semibold">
-        <span className="text-xl font-bold">Location</span>
-        <p>Koyra,Khulna,Bangladesh</p>
+          <span className="text-xl font-bold">Location</span>
+          <p>Koyra,Khulna,Bangladesh</p>
         </div>
       </div>
 
@@ -71,7 +56,7 @@ const Contact = () => {
           Send Message
         </button>
       </form>
-    </div>
+    </section>
   );
 };
 

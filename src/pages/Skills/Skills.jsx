@@ -47,17 +47,16 @@ const Skills = () => {
   );
 
   return (
-    <div className="max-w-5xl mx-auto md:p-5 lg:p-8 rounded-xl">
+    <section id="skills" className="max-w-5xl mx-auto md:p-5 lg:p-8 rounded-xl">
       <div className="mb-6">
         <SkillSection title="Frontend Development" skills={frontendSkills} />
       </div>
-
 
       <div className="flex flex-col md:flex-row gap-6">
         <SkillSection title="Backend Development" skills={backendSkills} />
         <SkillSection title="Version Control" skills={versionControlSkills} />
       </div>
-    </div>
+    </section>
   );
 };
 

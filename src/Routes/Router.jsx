@@ -11,28 +11,28 @@ export const router = createBrowserRouter([
     {
         path:'/',
         element:<Main/>,
-        children:[
-            {
-                path: '/',
-                element:<Home/>
-            },
-            {
-                path: '/about',
-                element:<About/>
-            },
-            {
-                path: '/skills',
-                element:<Skills/>
-            },
-            {
-                path: '/projects',
-                element:<Projects/>
-            },
-            {
-                path: '/contact',
-                element:<Contact/>
-            },
+        // children:[
+        //     {
+        //         path: '/',
+        //         element:<Home/>
+        //     },
+        //     {
+        //         path: '/about',
+        //         element:<About/>
+        //     },
+        //     {
+        //         path: '/skills',
+        //         element:<Skills/>
+        //     },
+        //     {
+        //         path: '/projects',
+        //         element:<Projects/>
+        //     },
+        //     {
+        //         path: '/contact',
+        //         element:<Contact/>
+        //     },
 
-        ]
+        // ]
     }
 ])
