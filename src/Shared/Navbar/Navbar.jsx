@@ -13,7 +13,7 @@ const Navbar = () => {
   const scrollToSection = (id) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = -100; 
+      const offset = -100;
       const elementPosition =
         element.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition + offset;
@@ -25,13 +25,11 @@ const Navbar = () => {
         behavior: "smooth",
       });
 
- 
       setTimeout(() => {
         setActiveSection(id);
-      }, 600); 
+      }, 600);
     }
   };
-
 
   const navLinks = [
     { name: "Home", id: "home" },
@@ -53,8 +51,7 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               onClick={() => scrollToSection(link.id)}
-              className={`relative text-white font-semibold cursor-pointer hover:text-gray-200 transition 
-             ${activeSection === link.id ? "border-b-2 border-white" : ""}`}
+              className="relative text-white font-semibold cursor-pointer hover:text-gray-200 transition"
               key={link.name}
             >
               {link.name}
@@ -85,9 +82,7 @@ const Navbar = () => {
                   scrollToSection(link.id);
                   setIsOpen(false);
                 }}
-                className={`relative text-white font-semibold cursor-pointer p-2 hover:bg-black rounded-sm transition ${
-                  activeSection === link.id ? "bg-black" : ""
-                }`}
+                className="relative text-white font-semibold cursor-pointer p-2 hover:bg-black rounded-sm transition"
                 key={link.name}
               >
                 {link.name}

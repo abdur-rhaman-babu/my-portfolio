@@ -49,7 +49,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="max-w-5xl mx-auto md:p-5 lg:p-8 rounded-xl mb-12"
+      className="max-w-5xl mx-auto md:p-5 rounded-xl mb-12"
     >
       <div data-aos="fade-down" className="text-center">
         <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
