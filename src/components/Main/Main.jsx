@@ -6,17 +6,10 @@ import Skills from "../../pages/Skills/Skills";
 import Projects from "../../pages/Projects/Projects";
 import Contact from "../../pages/Contact/Contact";
 import Banner from "../../pages/Banner/Banner";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { useEffect } from "react";
+
 
 const Main = () => {
-  useEffect(() => {
-    AOS.init({
-      duration: 1000, 
-      once: true,
-    });
-  }, []);
+
   return (
     <div>
       <Navbar />

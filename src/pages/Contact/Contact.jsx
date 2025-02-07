@@ -4,7 +4,7 @@ const Contact = () => {
       id="contact"
       className="mb-12"
     >
-      <div data-aos="fade-down" className="text-center">
+      <div className="text-center">
         <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
           Contact With <span className="text-[#058789]">Me</span>
         </h1>
