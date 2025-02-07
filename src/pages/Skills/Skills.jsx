@@ -19,7 +19,7 @@ const Skills = () => {
   ];
 
   const SkillSection = ({ title, skills }) => (
-    <div className="flex-1 p-6 rounded-xl shadow-md">
+    <div className="flex-1 p-6 rounded-xl shadow-sm">
       <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
         {title}
       </h3>

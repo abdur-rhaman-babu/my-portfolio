@@ -42,7 +42,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#058789] shadow-md fixed top-0 left-0 right-0 z-50 p-4 lg:px-20">
+    <nav className="bg-[#058789] shadow-md fixed top-0 left-0 right-0 z-50 p-4 lg:px-10">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-white">
           AR <span className="text-gray-200">BABU</span>

@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "project_name": "Gadget Heaven",
+    "project_image": "https://i.ibb.co.com/Xk5tFSFX/gadge-Heaven.png",
+    "main_technology_stack": ["ReactJS", "Tailwind CSS", "Daisyui"],
+    "brief_description": "Gadget Heaven is a one-stop e-commerce platform offering a wide range of tech products and accessories. From computers, laptops, smartphones, and smartwatches to headphones, chargers, and other essential accessories, we provide high-quality gadgets at competitive prices.",
+    "live_project_link": "https://unique-puffpuff-6e3ebe.netlify.app/",
+    "github_repository_link": "https://github.com/abdur-rhaman-babu/gadget-heaven",
+    "challenges_faced": "A few challenges faced while developing this project like add to card, product showing according to category etc.",
+    "potential_improvements": "Adding user authentication, payment process, implementing admin route."
+  },
+  {
+    "id": 2,
+    "project_name": "Tutor Booking",
+    "project_image": "https://i.ibb.co.com/BVkCDkrG/tutor-Booking.png",
+    "main_technology_stack": [
+      "ReactJS",
+      "Tailwind CSS",
+      "Daisyui",
+      "Firebase",
+      "MongoDB"
+    ],
+    "brief_description": "Tutor Booking Website is an online platform where users can find tutors for various languages and subjects. You can add your favorite tutors to your list and, if needed, remove them. The site offers an easy way to browse and book tutors based on your preferences.",
+    "live_project_link": "https://tutor-booking-edfeb.web.app/",
+    "github_repository_link": "https://github.com/abdur-rhaman-babu/tutor-booking",
+    "challenges_faced": "Integrating searching functionality and fatching data using specific email.",
+    "potential_improvements": "Implementing user review system and payment process"
+  },
+  {
+    "id": 3,
+    "project_name": "Sports Equipment",
+    "project_image": "https://i.ibb.co.com/mFzVKW2z/Equipment-sports.png",
+    "main_technology_stack": ["ReactJS", "Tailwind CSS", "Firebase", "MongoDB"],
+    "brief_description": "Sports Equipments offers top-quality cricket, football, volleyball, and more. Shop easily with secure payments and fast delivery. Get the best sports gear and elevate your game today!",
+    "live_project_link": "https://sports-equipment-3d812.web.app/",
+    "github_repository_link": "https://github.com/abdur-rhaman-babu/sports-client",
+    "challenges_faced": "When I secure admin using jwt token faced a challenge. But I have been finally successfull",
+    "potential_improvements": "Adding new Payment process like Bikash, Nagad etc."
+  }
+]
