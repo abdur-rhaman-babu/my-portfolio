@@ -13,7 +13,7 @@ const Main = () => {
   return (
     <div>
       <Navbar />
-      <div className="container lg:mx-auto bg-zinc-50 lg:px-10 p-3 md:p-5 -z-50 min-h-[73vh]">
+      <div className="container mx-auto bg-zinc-50 lg:px-10 p-3 md:p-5 -z-50 min-h-[73vh]">
         <Banner />
         <About />
         <Skills />

@@ -78,7 +78,7 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div data-aos="fade-left" className="bg-gradient-to-r from-[#058789] to-[#05696B] rounded-t-full">
+      <div className="bg-gradient-to-r from-[#058789] to-[#05696B] rounded-t-full">
         <img src={banner} alt="" />
       </div>
     </section>

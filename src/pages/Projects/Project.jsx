@@ -23,7 +23,7 @@ const Project = ({ project }) => {
           <h3 className="text-white text-xl font-semibold">{project.project_name}</h3>
           <button
             onClick={() => handleDetails(project)}
-            className="mt-2 px-4 py-2 bg-[#058789] text-white rounded-lg shadow-md hover:bg-[#047173] transition-all duration-300"
+            className="mt-2 px-4 py-2  text-white rounded-lg shadow-md bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] transition-all duration-300"
           >
             View Details
           </button>

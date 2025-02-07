@@ -5,17 +5,17 @@ import banner1 from "../../assets/image/banner1.png";
 const About = () => {
   return (
     <section id="about" className="mb-12">
-      <div data-aos="fade-down" className="text-center">
+      <div className="text-center">
         <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
           About <span className="text-[#058789]">Me</span>
         </h1>
       </div>
-      <div className="md:flex items-center gap-5 justify-between md:flex-row">
-        <div data-aos="fade-right" className="bg-gradient-to-r from-[#058789] to-[#05696B] rounded-t-full">
+      <div className="md:flex items-center md:gap-20 lg:gap-64 justify-between">
+        <div className="bg-gradient-to-r from-[#058789] to-[#05696B] rounded-t-full md:w-7/12">
           <img src={banner1} alt="" />
         </div>
 
-        <div data-aos="fade-left" className="flex flex-col gap-2 max-w-2xl">
+        <div className="flex flex-col gap-2 md:w-full">
           <h2 className="font-bold text-3xl">I'm 👋</h2>
           <h1 className="font-bold text-4xl">Abdur Rhaman Babu</h1>
 
@@ -90,6 +90,7 @@ const About = () => {
         </div>
       </div>
     </section>
+
   );
 };
 
