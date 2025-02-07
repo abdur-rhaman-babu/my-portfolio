@@ -4,7 +4,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 const Banner = () => {
   return (
-    <section id="home" className="md:flex items-center pt-20 gap-5 justify-between flex flex-col-reverse md:flex-row">
+    <section id="home" className="md:flex items-center mb-12 pt-20 gap-5 justify-between flex flex-col-reverse md:flex-row">
       <div className="flex flex-col gap-2 max-w-2xl">
         <h2 className="font-bold text-3xl">Hello 👋 It's Me</h2>
         <h1 className="font-bold text-4xl">Abdur Rhaman Babu</h1>

@@ -19,7 +19,7 @@ const Skills = () => {
   ];
 
   const SkillSection = ({ title, skills }) => (
-    <div className="flex-1 p-6 rounded-xl shadow-sm">
+    <div className="flex-1 p-6 rounded-xl shadow-sm bg-white">
       <h3 className="text-2xl font-bold text-gray-800 mb-4 text-center">
         {title}
       </h3>
@@ -48,6 +48,11 @@ const Skills = () => {
 
   return (
     <section id="skills" className="max-w-5xl mx-auto md:p-5 lg:p-8 rounded-xl">
+      <div className="text-center">
+        <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
+          My <span className="text-[#058789]">Skills</span>
+        </h1>
+      </div>
       <div className="mb-6">
         <SkillSection title="Frontend Development" skills={frontendSkills} />
       </div>
