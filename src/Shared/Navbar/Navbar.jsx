@@ -85,8 +85,8 @@ const Navbar = () => {
                   scrollToSection(link.id);
                   setIsOpen(false);
                 }}
-                className={`relative text-white font-semibold cursor-pointer hover:text-gray-200 transition ${
-                  activeSection === link.id ? "border-b-2 border-white" : ""
+                className={`relative text-white font-semibold cursor-pointer p-2 hover:bg-black rounded-sm transition ${
+                  activeSection === link.id ? "bg-black" : ""
                 }`}
                 key={link.name}
               >
