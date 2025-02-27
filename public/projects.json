@@ -37,5 +37,16 @@
     "github_repository_link": "https://github.com/abdur-rhaman-babu/sports-client",
     "challenges_faced": "When I secure admin using jwt token faced a challenge. But I have been finally successfull",
     "potential_improvements": "Adding new Payment process like Bikash, Nagad etc."
+  },
+  {
+    "id": 4,
+    "project_name": "Task Management",
+    "project_image": "https://i.ibb.co.com/whNNcnKc/task-manage.png",
+    "main_technology_stack": ["ReactJS", "Tailwind CSS", "Firebase", "MongoDB"],
+    "brief_description": "This app helps you stay organized by allowing you to add, edit, delete, and categorize tasks easily. Whether you're managing work, personal goals, or daily to-dos, you can keep everything in one place and update tasks as needed. Stay productive and in control of your tasks!",
+    "live_project_link": "https://task-management-applicat-3cb36.web.app/auth/login",
+    "github_repository_link": "https://github.com/abdur-rhaman-babu/task-management-client?tab=readme-ov-file",
+    "challenges_faced": "When I was developing the app, I faced a difficult challenge. I couldn't implement the reorder and drag-and-drop system. Finally, after 8 hours of attempts, I successfully completed it.",
+    "potential_improvements": "Adding new fetures of jwt authentication"
   }
 ]
