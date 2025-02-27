@@ -71,9 +71,10 @@ const About = () => {
               <a
                 href="https://drive.google.com/file/d/1LFuWI93B67g_jyavfsX6m2GTS0rUhbiy/view?usp=sharing"
                 download
+                target="_blank"
                 className="text-white bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold"
               >
-                Download CV
+                View Resume
               </a>
             </button>
             <button>
@@ -81,6 +82,7 @@ const About = () => {
               <a
                 href="https://www.linkedin.com/in/abdur-rhaman-babu-239553228/"
                 download
+                target="_blank"
                 className="bg-gradient-to-r px-4 py-2 rounded-md font-semibold border border-[#058789]"
               >
                 Hire Me
