@@ -48,5 +48,16 @@
     "github_repository_link": "https://github.com/abdur-rhaman-babu/task-management-client?tab=readme-ov-file",
     "challenges_faced": "When I was developing the app, I faced a difficult challenge. I couldn't implement the reorder and drag-and-drop system. Finally, after 8 hours of attempts, I successfully completed it.",
     "potential_improvements": "Adding new fetures of jwt authentication"
+  },
+  {
+    "id": 5,
+    "project_name": "Medicare Service",
+    "project_image": "https://i.ibb.co.com/B2hDBX4b/medicare.png",
+    "main_technology_stack": ["ReactJS", "Tailwind CSS", "Firebase", "MongoDB", "Stripe"],
+    "brief_description": "Medicare is an online platform where users can conveniently purchase medications, healthcare products, and wellness essentials from the comfort of their home. With a user-friendly interface, secure payment options, and a wide range of pharmaceutical products, Medicare makes healthcare shopping easier and more accessible for everyone.",
+    "live_project_link": "https://healthcare-b9cca.web.app/",
+    "github_repository_link": "https://github.com/abdur-rhaman-babu/health-care-vendor",
+    "challenges_faced": "When I was developing the web app, I faced a difficult challenge. I couldn't implement the payment system. Finally, after 6 hours of attempts, I successfully completed it.",
+    "potential_improvements": "I am improving this project design"
   }
 ]
