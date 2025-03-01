@@ -30,7 +30,7 @@
   {
     "id": 3,
     "project_name": "Sports Equipment",
-    "project_image": "https://i.ibb.co.com/mFzVKW2z/Equipment-sports.png",
+    "project_image": "https://i.ibb.co.com/qLy02drF/sports.png",
     "main_technology_stack": ["ReactJS", "Tailwind CSS", "Firebase", "MongoDB"],
     "brief_description": "Sports Equipments offers top-quality cricket, football, volleyball, and more. Shop easily with secure payments and fast delivery. Get the best sports gear and elevate your game today!",
     "live_project_link": "https://sports-equipment-3d812.web.app/",
