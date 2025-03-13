@@ -60,7 +60,7 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1LFuWI93B67g_jyavfsX6m2GTS0rUhbiy/view?usp=sharing"
+          href="https://drive.google.com/file/d/1t03OG_nBW4ZOo1YyFh33ppT6CUeOV6qv/view?usp=sharing"
           download
           target="_blank"
           className="hidden lg:block bg-white text-[#058789] px-4 py-2 rounded-md font-semibold hover:bg-gray-200"

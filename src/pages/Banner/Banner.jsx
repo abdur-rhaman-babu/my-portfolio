@@ -59,7 +59,7 @@ const Banner = () => {
           <button>
             {" "}
             <a
-              href="https://drive.google.com/file/d/1DZd8VV65eNwiQHu8XwN2wlzA7emtuWB9/view?usp=sharing"
+              href="https://drive.google.com/file/d/1t03OG_nBW4ZOo1YyFh33ppT6CUeOV6qv/view?usp=sharing"
               download
               target="_blank"
               className="text-white bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold"
