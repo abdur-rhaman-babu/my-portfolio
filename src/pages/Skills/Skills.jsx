@@ -1,4 +1,6 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import fadeIn from "../../variants";
 
 const Skills = () => {
   const frontendSkills = [
@@ -26,10 +28,12 @@ const Skills = () => {
     const strokeWidth = 10; // Thicker stroke for better visibility
     const circumference = 2 * Math.PI * radius;
     const progress = (skill.level / 100) * circumference;
-  
+
     return (
       <div className="flex flex-col items-center">
-        <svg className="w-32 h-32 transform rotate-360"> {/* Rotated for left-to-right animation */}
+        <svg className="w-32 h-32 transform rotate-360">
+          {" "}
+          {/* Rotated for left-to-right animation */}
           <circle
             cx="50%"
             cy="50%"
@@ -59,7 +63,6 @@ const Skills = () => {
       </div>
     );
   };
-  
 
   // Skill Section Component
   const SkillSection = ({ title, skills, isCircular }) => (
@@ -98,18 +101,53 @@ const Skills = () => {
 
   return (
     <section id="skills" className="max-w-5xl mx-auto md:p-5 rounded-xl mb-12">
-      <div data-aos="fade-down" className="text-center">
+      <motion.div
+        variants={fadeIn("down", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+        className="text-center"
+      >
         <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
           My <span className="text-[#058789]">Skills</span>
         </h1>
-      </div>
-      <div data-aos="fade-down" className="mb-6">
+      </motion.div>
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: false, amount: 0.7 }}
+      >
         <SkillSection title="Frontend Development" skills={frontendSkills} />
-      </div>
+      </motion.div>
 
-      <div data-aos="fade-up" className="flex flex-col md:flex-row gap-6">
-        <SkillSection title="Backend Development" skills={backendSkills} isCircular />
-        <SkillSection title="Version Control" skills={versionControlSkills} isCircular />
+      <div className="flex flex-col md:flex-row gap-6 mt-16">
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full"
+        >
+          <SkillSection
+            title="Backend Development"
+            skills={backendSkills}
+            isCircular
+          />
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="w-full"
+        >
+          <SkillSection
+            title="Version Control"
+            skills={versionControlSkills}
+            isCircular
+          />
+        </motion.div>
       </div>
     </section>
   );
