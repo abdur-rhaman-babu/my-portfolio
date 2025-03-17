@@ -66,8 +66,8 @@ const Skills = () => {
 
   // Skill Section Component
   const SkillSection = ({ title, skills, isCircular }) => (
-    <div className="flex-1 p-6 rounded-xl shadow-sm bg-white text-center">
-      <h3 className="text-2xl font-bold text-gray-800 mb-4">{title}</h3>
+    <div className="flex-1 p-6 rounded-xl shadow-sm bg-white text-center dark:bg-gray-900">
+      <h3 className="text-2xl font-bold text-gray-800 mb-4 dark:text-white">{title}</h3>
       {isCircular ? (
         <div className="flex justify-center gap-6 flex-wrap">
           {skills.map((skill, index) => (
@@ -79,7 +79,7 @@ const Skills = () => {
           {skills.map((skill, index) => (
             <div key={index}>
               <div className="flex justify-between mb-1">
-                <span className="text-lg font-semibold text-gray-800">
+                <span className="text-lg font-semibold text-gray-800 dark:text-white">
                   {skill.name}
                 </span>
                 <span className="text-lg font-semibold text-gray-600">
@@ -108,8 +108,8 @@ const Skills = () => {
         viewport={{ once: false, amount: 0.7 }}
         className="text-center"
       >
-        <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
-          My <span className="text-[#058789]">Skills</span>
+        <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block dark:border-gray-400">
+          My <span className="text-[#058789] dark:text-gray-300">Skills</span>
         </h1>
       </motion.div>
       <motion.div
