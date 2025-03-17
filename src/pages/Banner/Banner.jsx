@@ -4,13 +4,16 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 const Banner = () => {
   return (
-    <section id="home" className="md:flex items-center mb-12 pt-20 gap-5 justify-between flex flex-col-reverse md:flex-row">
+    <section
+      id="home"
+      className="md:flex items-center mb-12 pt-20 gap-5 justify-between flex flex-col-reverse md:flex-row"
+    >
       <div data-aos="fade-right" className="flex flex-col gap-2 max-w-2xl">
         <h2 className="font-bold text-3xl">Hello 👋 It's Me</h2>
         <h1 className="font-bold text-4xl">Abdur Rhaman Babu</h1>
 
         <h2 className="font-bold text-3xl">
-          I'm a {' '}
+          I'm a{" "}
           <TypeAnimation
             sequence={[
               "Frontend Developer",
@@ -59,9 +62,8 @@ const Banner = () => {
           <button>
             {" "}
             <a
-              href="https://drive.google.com/file/d/1t03OG_nBW4ZOo1YyFh33ppT6CUeOV6qv/view?usp=sharing"
-              download
-              target="_blank"
+              href="/Front_End_Developer.pdf"
+              download="Front_End_Developer.pdf"
               className="text-white bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold"
             >
               View Resume

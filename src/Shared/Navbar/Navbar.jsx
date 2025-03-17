@@ -18,18 +18,33 @@ const Navbar = () => {
         element.getBoundingClientRect().top + window.scrollY;
       const offsetPosition = elementPosition + offset;
 
-      setActiveSection(id);
-
       window.scrollTo({
         top: offsetPosition,
         behavior: "smooth",
       });
 
-      setTimeout(() => {
-        setActiveSection(id);
-      }, 600);
+      setActiveSection(id);
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      let currentSection = "home";
+
+      sections.forEach((section) => {
+        const sectionTop = section.offsetTop - 120;
+        if (window.scrollY >= sectionTop) {
+          currentSection = section.id;
+        }
+      });
+
+      setActiveSection(currentSection);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const navLinks = [
     { name: "Home", id: "home" },
@@ -40,7 +55,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="bg-[#058789] shadow-md fixed top-0 left-0 right-0 z-50 p-4 lg:px-10">
+    <nav className="bg-[#058789]/80 backdrop-blur-md shadow-md fixed top-0 left-0 right-0 z-50 p-4 lg:px-10">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-white">
           AR <span className="text-gray-200">BABU</span>
@@ -51,7 +66,11 @@ const Navbar = () => {
           {navLinks.map((link) => (
             <li
               onClick={() => scrollToSection(link.id)}
-              className="relative text-white font-semibold cursor-pointer hover:text-gray-200 transition"
+              className={`relative font-semibold cursor-pointer transition ${
+                activeSection === link.id
+                  ? "text-white border-b-2 border-white"
+                  : "text-white hover:text-gray-200"
+              }`}
               key={link.name}
             >
               {link.name}
@@ -60,9 +79,8 @@ const Navbar = () => {
         </ul>
 
         <a
-          href="https://drive.google.com/file/d/1t03OG_nBW4ZOo1YyFh33ppT6CUeOV6qv/view?usp=sharing"
-          download
-          target="_blank"
+          href="/Front_End_Developer.pdf"
+          download='Front_End_Developer.pdf'
           className="hidden lg:block bg-white text-[#058789] px-4 py-2 rounded-md font-semibold hover:bg-gray-200"
         >
           View Resume
@@ -83,7 +101,11 @@ const Navbar = () => {
                   scrollToSection(link.id);
                   setIsOpen(false);
                 }}
-                className="relative text-white font-semibold cursor-pointer p-2 hover:bg-black rounded-sm transition"
+                className={`relative font-semibold cursor-pointer p-2 rounded-sm transition ${
+                  activeSection === link.id
+                    ? "bg-black text-white"
+                    : "text-white hover:bg-black"
+                }`}
                 key={link.name}
               >
                 {link.name}
