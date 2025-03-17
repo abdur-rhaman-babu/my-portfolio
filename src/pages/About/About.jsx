@@ -16,7 +16,7 @@ const About = () => {
       </div>
       <div className="flex flex-col md:flex-row items-center text-center md:text-left justify-between gap-5 px-4">
         <motion.div
-          variants={fadeIn("left", 0.2)}
+          variants={fadeIn("right", 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.7 }}
@@ -25,12 +25,12 @@ const About = () => {
           <img
             src={banner1}
             alt="Profile Banner"
-            className="w-52 sm:w-64 md:w-80 lg:w-96 rounded-full scale-x-[-1]"
+            className="w-52 sm:w-64 md:w-80 lg:w-96 rounded-full"
           />
         </motion.div>
 
         <motion.div
-        variants={fadeIn("right", 0.2)}
+        variants={fadeIn("left", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}

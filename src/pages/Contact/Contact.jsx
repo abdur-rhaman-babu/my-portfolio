@@ -1,16 +1,21 @@
+import { motion } from "framer-motion";
+import fadeIn from "../../variants";
 const Contact = () => {
   return (
-    <section
-      id="contact"
-      className="mb-12"
-    >
+    <section id="contact" className="mb-12">
       <div className="text-center">
         <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
           Contact With <span className="text-[#058789]">Me</span>
         </h1>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-2 md:p-5 lg:p-8 bg-white rounded-xl shadow-sm max-w-4xl mx-auto">
-        <div data-aos="fade-right" className="space-y-4 md:border-r-2 border-[#058789]">
+        <motion.div
+          variants={fadeIn("right", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="space-y-4 md:border-r-2 border-[#058789]"
+        >
           <h2 className="text-3xl font-bold text-gray-900">Get in Touch</h2>
 
           <div className="text-lg text-gray-700 font-semibold">
@@ -25,9 +30,15 @@ const Contact = () => {
             <span className="text-xl font-bold">Location</span>
             <p>Koyra,Khulna,Bangladesh</p>
           </div>
-        </div>
+        </motion.div>
 
-        <form data-aos="fade-up" className="bg-white  rounded-xl space-y-4">
+        <motion.form
+          variants={fadeIn("up", 0.2)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.7 }}
+          className="bg-white  rounded-xl space-y-4"
+        >
           <input
             type="text"
             name="name"
@@ -61,7 +72,7 @@ const Contact = () => {
           >
             Send Message
           </button>
-        </form>
+        </motion.form>
       </div>
     </section>
   );
