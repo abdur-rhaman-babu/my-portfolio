@@ -12,7 +12,7 @@ const Projects = () => {
 
 
   return (
-    <section id="projects" className="mb-12">
+    <section id="projects" className="mb-20">
       <div data-aos="fade-down" className="text-center">
         <h1 className="font-bold text-4xl border-[#058789] border-t-4 border-b-4 p-2 my-5 inline-block">
           My <span className="text-[#058789]">Projects</span>

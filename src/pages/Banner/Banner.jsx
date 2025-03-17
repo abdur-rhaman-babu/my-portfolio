@@ -14,7 +14,7 @@ const Banner = () => {
   return (
     <section
       id="home"
-      className="flex flex-col-reverse md:flex-row items-center text-center md:text-left justify-between gap-5 pt-16 px-4"
+      className="flex flex-col-reverse md:flex-row items-center text-center md:text-left justify-between gap-5 pt-32 pb-8 px-4"
     >
       {/* Text Content with Motion Animation */}
       <motion.div
