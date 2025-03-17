@@ -1,4 +1,9 @@
-import { FaDownload, FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import {
+  FaDownload,
+  FaFacebookSquare,
+  FaGithubSquare,
+  FaLinkedin,
+} from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 import banner from "../../assets/image/banner1.png";
@@ -7,7 +12,10 @@ import fadeIn from "../../variants";
 
 const Banner = () => {
   return (
-    <section id="home" className="flex flex-col-reverse md:flex-row items-center text-center md:text-left justify-between gap-5 pt-16 px-4">
+    <section
+      id="home"
+      className="flex flex-col-reverse md:flex-row items-center text-center md:text-left justify-between gap-5 pt-16 px-4"
+    >
       {/* Text Content with Motion Animation */}
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -20,7 +28,7 @@ const Banner = () => {
         <h1 className="font-bold text-3xl sm:text-4xl">Abdur Rahman Babu</h1>
 
         <h2 className="font-bold text-xl sm:text-2xl">
-          I'm a {" "}
+          I'm a{" "}
           <TypeAnimation
             sequence={[
               "Frontend Developer",
@@ -39,45 +47,77 @@ const Banner = () => {
 
         <p className="text-sm sm:text-base">
           I am a passionate frontend web developer. I build interactive and
-          user-friendly websites using modern technologies like React, Tailwind CSS, and JavaScript.
+          user-friendly websites using modern technologies like React, Tailwind
+          CSS, and JavaScript.
         </p>
 
         {/* Social Media Icons */}
         <div className="flex justify-center md:justify-start items-center gap-3 my-4">
-          <a href="https://github.com/abdur-rhaman-babu" className="border-2 border-[#058789] p-2 rounded-lg hover:bg-[#058789] hover:text-white transition">
+          <a
+            href="https://github.com/abdur-rhaman-babu"
+            className="border-2 border-[#058789] p-2 rounded-lg hover:bg-[#058789] hover:text-white transition"
+          >
             <FaGithubSquare size={30} />
           </a>
-          <a href="https://www.linkedin.com/in/abdur-rhaman-babu-239553228/" className="border-2 border-[#058789] p-2 rounded-lg text-blue-500 hover:bg-blue-500 hover:text-white transition">
+          <a
+            href="https://www.linkedin.com/in/abdur-rhaman-babu-239553228/"
+            className="border-2 border-[#058789] p-2 rounded-lg text-blue-500 hover:bg-blue-500 hover:text-white transition"
+          >
             <FaLinkedin size={30} />
           </a>
-          <a href="https://x.com/?lang=en" className="border-2 border-[#058789] p-2 rounded-lg hover:bg-[#058789] hover:text-white transition">
+          <a
+            href="https://x.com/?lang=en"
+            className="border-2 border-[#058789] p-2 rounded-lg hover:bg-[#058789] hover:text-white transition"
+          >
             <FaSquareXTwitter size={30} />
           </a>
-          <a href="https://www.facebook.com/mdarahman.babu/" className="border-2 border-[#058789] p-2 rounded-lg text-blue-700 hover:bg-blue-700 hover:text-white transition">
+          <a
+            href="https://www.facebook.com/mdarahman.babu/"
+            className="border-2 border-[#058789] p-2 rounded-lg text-blue-700 hover:bg-blue-700 hover:text-white transition"
+          >
             <FaFacebookSquare size={30} />
           </a>
         </div>
 
         {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-3">
-          <a href="/Front_End_Developer.pdf" download="Front_End_Developer.pdf" className="text-white flex justify-center items-center gap-2 bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold">
+          <a
+            href="/Front_End_Developer.pdf"
+            download="Front_End_Developer.pdf"
+            className="text-white flex justify-center items-center gap-2 bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold"
+          >
             Resume <FaDownload />
           </a>
-          <a href="https://www.linkedin.com/in/abdur-rhaman-babu-239553228/" target="_blank" className="bg-transparent text-[#058789] border border-[#058789] hover:bg-[#058789] hover:text-white px-4 py-2 rounded-md font-semibold transition">
+          <a
+            href="https://www.linkedin.com/in/abdur-rhaman-babu-239553228/"
+            target="_blank"
+            className="bg-transparent text-[#058789] border border-[#058789] hover:bg-[#058789] hover:text-white px-4 py-2 rounded-md font-semibold transition"
+          >
             Hire Me
           </a>
         </div>
       </motion.div>
 
       {/* Image with Motion Animation */}
+
       <motion.div
         variants={fadeIn("left", 0.2)}
         initial="hidden"
         whileInView="show"
         viewport={{ once: false, amount: 0.7 }}
-        className="bg-gradient-to-r from-[#058789] to-[#05696B] rounded-full p-2 "
+        className="relative flex items-center justify-center"
       >
-        <img src={banner} alt="Profile Banner" className="w-52 sm:w-64 md:w-80 lg:w-96 rounded-full scale-x-[-1]" />
+        {/* Glowing Light Effect */}
+        <div className="absolute w-[250px] sm:w-[300px] md:w-[400px] lg:w-[500px] h-[250px] sm:h-[300px] md:h-[400px] lg:h-[500px] bg-[#058789] opacity-40 blur-3xl rounded-full"></div>
+
+        {/* Image Container */}
+        <div className="relative bg-gradient-to-r from-[#058789] to-[#05696B] rounded-full p-2 shadow-[0_0_50px_#058789]">
+          <img
+            src={banner}
+            alt="Profile Banner"
+            className="w-52 sm:w-64 md:w-80 lg:w-96 rounded-full scale-x-[-1]"
+          />
+        </div>
       </motion.div>
     </section>
   );
