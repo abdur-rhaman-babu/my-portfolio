@@ -1,4 +1,4 @@
-import { FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { FaDownload, FaFacebookSquare, FaGithubSquare, FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { TypeAnimation } from "react-type-animation";
 import banner1 from "../../assets/image/banner1.png";
@@ -71,9 +71,12 @@ const About = () => {
               <a
                 href="/Front_End_Developer.pdf"
                 download="Front_End_Developer.pdf"
-                className="text-white bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold"
+                className="text-white flex items-center gap-2 bg-gradient-to-r from-[#058789] to-[#05696B] hover:from-[#05696B] hover:to-[#058789] px-4 py-2 rounded-md font-semibold"
               >
-                View Resume
+                Resume{" "}
+                <i>
+                  <FaDownload />
+                </i>
               </a>
             </button>
             <button>

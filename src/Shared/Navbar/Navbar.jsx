@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaDownload, FaTimes } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
@@ -81,9 +81,9 @@ const Navbar = () => {
         <a
           href="/Front_End_Developer.pdf"
           download='Front_End_Developer.pdf'
-          className="hidden lg:block bg-white text-[#058789] px-4 py-2 rounded-md font-semibold hover:bg-gray-200"
+          className="hidden lg:flex items-center gap-2 lg:block bg-white text-[#058789] px-4 py-2 rounded-md font-semibold hover:bg-gray-200"
         >
-          View Resume
+          Resume <i><FaDownload /></i>
         </a>
 
         <button onClick={toggleMenu} className="lg:hidden text-white text-2xl">
